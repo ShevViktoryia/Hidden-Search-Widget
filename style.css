@@ -10,8 +10,50 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 36%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .search-container {
   height: 80px;
+  position: relative;
+}
+
+.input {
+  border: none;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: 0.8s;
+}
+
+.search-btn {
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: 0.8s;
+}
+
+.input:focus,
+.search-btn:focus {
+  outline: none;
+}
+
+.search-container.active .input {
+  width: 200px;
+}
+
+.search-container.active .search-btn {
+  transform: translateX(200px);
 }
