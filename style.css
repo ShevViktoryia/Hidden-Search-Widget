@@ -51,9 +51,9 @@ body {
 }
 
 .search-container.active .input {
-  width: 200px;
+  width: 400px;
 }
 
 .search-container.active .search-btn {
-  transform: translateX(200px);
+  transform: translateX(400px);
 }
